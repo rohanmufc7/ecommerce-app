@@ -1,0 +1,27 @@
+Ecommerce Web-App is divided into three major modules
+
+1)User
+2)Item
+3)Order
+
+1)User:-
+
+		a)SignUp Api:- User signs up by providing certain information as provided into User Entity
+		b)Login Api:-User logs in by giving credentials
+		
+2)Item:-
+		a)This module consists of CRUD operations where in user can Create,Retrieve,Update And Delete Items by providing credentails.
+		
+3)Order:-
+		a)Create Api:- User can place order by providing  the item id as URL parameter and quantity as well as email id of the user as Request Body of Post Api.
+		Since order needs to have item as its property, i have used the concept of @Embeddable in ItemDTo and @Embedded in Order Entity
+		b)Get All Orders:- User can get all the orders he/she has placed.
+		
+		
+Please Note:- I have also provided Swagger documentation which consists of the API's documentation.
+
+Steps to run application:
+
+1)Just clone the project and start the application as run as Spring Boot Application .
+2)You Need to provide your own db_name, I have given my db_name as sample in application.properties.
+
